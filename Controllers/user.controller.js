@@ -131,7 +131,7 @@ module.exports.loginUser = async (req, res, next) => {
 
     //Save refreshToken in the db after every login
     user.refreshToken = refreshToken;
-    await user.save;
+    await user.save();
 
     // Set HTTP-only cookie
     res.cookie("refreshToken", refreshToken, {
