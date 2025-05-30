@@ -2,7 +2,7 @@ const multer = require("multer");
 const fs = require("fs");
 const path = require("path");
 
-const uploadPath = path.join(__dirname, "../public/temp");
+const uploadPath = path.join("/tmp", "public", "temp");
 
 // Ensure the directory exists
 //upload path is the folder where the image will be uploaded and the image will be saved in this folder
