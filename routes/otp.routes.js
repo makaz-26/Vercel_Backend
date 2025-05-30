@@ -1,6 +1,6 @@
 const express = require("express");
 const { body } = require("express-validator");
-const otpController = require("../controllers/otp.controller");
+const otpController = require("../Controllers/otp.controller");
 
 const router = express.Router();
 
