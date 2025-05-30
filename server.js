@@ -29,6 +29,7 @@ const allowedOrigins = [
   'http://localhost:5174',
   'https://0180-122-161-49-62.ngrok-free.app', // <- Add your ngrok frontend URL here
   'https://vercel-frontend-six-vert.vercel.app',
+  'https://vercel-frontend-p4yqt753x-srijan-ojhas-projects-bbc84',
 ];
 
 app.use(cors({
@@ -77,6 +78,21 @@ app.use("/admin", adminRoutes);
 app.use("/api/cron", cronRoutes);
 
 
+
+// Global error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack); // Log the full error stack for debugging
+
+  const statusCode = err.statusCode || 500;
+  const message = err.message || "Internal Server Error";
+
+  res.status(statusCode).json({
+    success: false,
+    message: message,
+    // Optionally, you can include the stack trace in development
+    // stack: process.env.NODE_ENV === 'development' ? err.stack : undefined,
+  });
+});
 
 app.get("/", (req, res) => {
   res.send(`Hello from the server`);
