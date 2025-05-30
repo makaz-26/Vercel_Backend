@@ -1,7 +1,7 @@
 // controllers/referral.controller.js
 const { validationResult } = require("express-validator");
 const mongoose = require("mongoose");
-const User = require("../Models/User.model"); 
+const User = require("../Models/user.model"); 
 
 // Get Referral Stats
 exports.getReferralStats = async (req, res) => {
