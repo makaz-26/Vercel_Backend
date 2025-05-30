@@ -1,6 +1,6 @@
 const BankDetail = require("../Models/bankdetails.model");
-const Transaction = require("../models/transaction.model");
-const User = require("../models/user.model");
+const Transaction = require("../Models/transaction.model");
+const User = require("../Models/user.model");
 
 // Service to create a deposit transaction
 
