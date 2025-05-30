@@ -5,7 +5,7 @@ const { body, validationResult } = require("express-validator");
 const userController = require("../Controllers/user.controller");
 const authMiddleware = require("../Middlewares/auth.middlewares");
 const { refreshAccessToken } = require("../Middlewares/auth.middlewares");
-const { upload } = require("../middlewares/multer.middleware");
+const { upload } = require("../Middlewares/multer.middleware");
 
 // Middleware to handle validation errors
 const validate = (req, res, next) => {
