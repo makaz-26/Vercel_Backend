@@ -1,4 +1,4 @@
-const transactionService = require("../services/transaction.service");
+const transactionService = require("../Services/transaction.service");
 const Transaction = require("../Models/transaction.model");
 const User = require("../Models/user.model");
 
