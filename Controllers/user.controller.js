@@ -1,4 +1,4 @@
-const User = require("../models/user.model");
+const User = require("../Models/user.model");
 const { validationResult } = require("express-validator");
 const { uploadOnCloudinary } = require("../utils/cloudinary");
 const gpuPlans = require("../utils/gpuPlans");
