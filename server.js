@@ -29,7 +29,7 @@ const allowedOrigins = [
   'http://localhost:5174',
   'https://0180-122-161-49-62.ngrok-free.app', // <- Add your ngrok frontend URL here
   'https://vercel-frontend-six-vert.vercel.app',
-  'https://vercel-frontend-p4yqt753x-srijan-ojhas-projects-bbc84',
+ 
 ];
 
 app.use(cors({
