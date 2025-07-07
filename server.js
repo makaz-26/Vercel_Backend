@@ -27,9 +27,11 @@ app.use(express.json());
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:5174',
-  'https://0180-122-161-49-62.ngrok-free.app', // <- Add your ngrok frontend URL here
-  'https://usdt-frontend-seven.vercel.app',
-  'https://usdt-admin.vercel.app'
+  'https://0180-122-161-49-62.ngrok-free.app', 
+  'https://usdt-admin.vercel.app',
+  'https://usdt-frontend-gjsw.vercel.app'
+  
+
 
 ];
 
@@ -54,7 +56,7 @@ app.use(express.urlencoded({ extended: true }));
 // Trust proxy (needed for secure cookies behind a proxy/load balancer)
 app.set('trust proxy', 1);
 
-//Connect to the database
+
 connectDB();
 
 // Debugging middleware to log incoming requests
